@@ -1,6 +1,6 @@
-import type { Recipe } from './types.ts';
+import type { Recipe } from './types.ts';// Import Recipe type
 
-const API_URL = 'http://localhost:3000/recipes';
+const API_URL = 'http://localhost:3000/recipes'; // Base URL for the json-server API
 
 // Fetch all recipes from the server (READ)
 export async function getRecipes(): Promise<Recipe[]> {
@@ -8,7 +8,7 @@ export async function getRecipes(): Promise<Recipe[]> {
   if (!res.ok) {
     throw new Error('Failed to fetch recipes');
   }
-  return res.json();
+  return res.json(); // Return recipes as JSON
 }
 
 // Create a new recipe (CREATE)
@@ -23,7 +23,7 @@ export async function createRecipe(recipe: Omit<Recipe, 'id'>): Promise<Recipe> 
     throw new Error('Failed to create recipe');
   }
 
-  return res.json();
+  return res.json(); // Return newly created recipe
 }
 
 // Delete a recipe by ID (DELETE)
