@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W13 Vite + TS</title>
+  </head>
+  <body>
+    <header class="text-center py-5" style="background: url('/images/foodHeader.jpeg') center/cover no-repeat; height: 400px; position: relative;">
+      <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="p-4 bg-white bg-opacity-75 rounded shadow">
+          <h1 class="display-2 fw-bold text-dark">Discover All of Mom's Tasty Recipes</h1>
+          <p class="lead fs-3 fw-semibold text-dark">Just like the ones you had as a kid</p>
+        </div>
+      </div>
+    </header>
+  
+    <main class="container my-5">
+      <h1 class="text-center mb-4">Momma K's Recipes</h1>
+  
+      <form id="recipeForm" class="mb-4">
+        <div class="mb-3">
+          <input type="text" id="recipeName" class="form-control" placeholder="Recipe Name" required>
+        </div>
+        <div class="mb-3">
+          <textarea id="recipeIngredients" class="form-control" placeholder="Ingredients" required></textarea>
+        </div>
+        <div class="mb-3">
+          <textarea id="recipeInstructions" class="form-control" placeholder="Instructions"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Add Recipe</button>
+      </form>
+  
+      <ul id="recipeList" class="list-group"></ul>
+    </main>
+  
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

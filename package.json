@@ -1,0 +1,32 @@
+{
+  "name": "coding-assignment-vite",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "esbuild": "^0.25.3",
+    "fdir": "^6.4.4",
+    "jquery": "^3.7.1",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.2",
+    "postcss": "^8.5.3",
+    "rollup": "^4.40.1",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.13"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.4"
+  }
+}
